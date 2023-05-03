@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  vellMed-db:
+    image: postgres:13-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: "postgres"
+      POSTGRES_DB: "vollMed"
+    ports:
+      - 5432:5432
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d/
