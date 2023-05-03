@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/vollMed?currentSchema=vollmedschema
-    username: postgres
-    password: 123
-  driverClassName: org.postgresql.Driver
+    url: jdbc:mysql://localhost:3308/vollMed?allowPublicKeyRetrieval=true&useSSL=false
+    username: vollmed
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
